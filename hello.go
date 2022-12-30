@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/google/go-cmp/cmp"
 	"github.com/jeking-illinois/hello_go/morestrings"
 )
 
@@ -13,4 +14,5 @@ func main() {
 
 	fmt.Println("Eyes up, Guardian.")
 	fmt.Println(morestrings.ReverseRunes(monologue))
+	fmt.Println(cmp.Diff("Little Light", "Widdle Wight"))
 }
